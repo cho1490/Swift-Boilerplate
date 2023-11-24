@@ -7,8 +7,8 @@
 2. Go to the folder where you want to create the project
 3. Command - git clone https://github.com/cho1490/Swift-Boilerplate.git ProjectName
 4. Command - cd ProjectName
-5. Command - pod install
-6. Command - ./init
+5. Command - ./init
+6. Command - pod install
 7. Create project
 
 ## 프레임워크
