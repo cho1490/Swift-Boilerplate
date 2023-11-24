@@ -1,6 +1,6 @@
 ## Swift-Boilerplate
-- 내 스타일을 첨가한 프로젝트 템플릿
-- 코드 베이스, MVVM
+- 내 스타일대로 프로젝트 템플릿
+- Code base, MVVM
 
 ## 프로젝트 생성하는 방법
 1. Open Terminal
