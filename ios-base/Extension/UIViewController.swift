@@ -6,4 +6,11 @@
 //  Copyright © 2023 ChoSangHyun. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController {
+    func setTabBarItem(title: String, image: UIImage?) {
+        tabBarItem.title = title
+        tabBarItem.image = image
+    }
+}

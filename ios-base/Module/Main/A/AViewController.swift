@@ -8,4 +8,16 @@
  
 class AViewController: BaseViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func initConstraints() {
+        
+    }
+    
+    override func binding() {
+        
+    }
+    
 }

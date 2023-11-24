@@ -31,22 +31,20 @@ final class Navigator {
         case .main:
             let aViewModel = AViewModel(service: networkService)
             let aViewController = AViewController(viewModel: aViewModel, navigator: self)
-            aViewController.tabBarItem.title = "a"
-            aViewController.tabBarItem.image = UIImage(systemName: "a.circle.fill")
+            aViewController.setTabBarItem(title: "a", image: UIImage(systemName: "a.circle.fill"))
             
             let bViewModel = BViewModel(service: networkService)
             let bViewController = BViewController(viewModel: bViewModel, navigator: self)
-            bViewController.tabBarItem.title = "b"
-            bViewController.tabBarItem.image = UIImage(systemName: "b.circle.fill")
+            bViewController.setTabBarItem(title: "b", image: UIImage(systemName: "b.circle.fill"))
             
             let cViewModel = CViewModel(service: networkService)
             let cViewController = CViewController(viewModel: cViewModel, navigator: self)
-            cViewController.tabBarItem.title = "c"
-            cViewController.tabBarItem.image = UIImage(systemName: "c.circle.fill")
+            cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))            
             
             let mainViewModel = MainViewModel(service: networkService)
             let mainTabBarController = MainTabBarController(viewModel: mainViewModel, navigator: self)
             mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
+                        
             return mainTabBarController
         }
     } 

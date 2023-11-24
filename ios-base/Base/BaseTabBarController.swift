@@ -33,6 +33,8 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
+        
+        tabBar.tintColor = .label
                 
         initConstraints()
         binding()

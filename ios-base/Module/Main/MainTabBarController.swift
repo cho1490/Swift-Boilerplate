@@ -19,7 +19,7 @@ final class MainTabBarController: BaseTabBarController {
     }
     
     override func binding() {
-
+        
     }
   
 }
