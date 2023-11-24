@@ -159,9 +159,9 @@
 				DE99620B2B0DB8D800126FB1 /* Common */,
 				DE9962022B0DA0CA00126FB1 /* Util */,
 				DE3887192B107BC400FAEC3C /* Extension */,
-				DE9962102B0DD8E900126FB1 /* Module */,
+				DE9962102B0DD8E900126FB1 /* Presentation */,
 				DE9961FE2B0D9DA400126FB1 /* CustomView */,
-				DE9961FF2B0D9DB300126FB1 /* Network */,
+				DE9961FF2B0D9DB300126FB1 /* Repository */,
 				9B0C726A1C738D3400BAF3B1 /* Assets.xcassets */,
 				9B0C726D1C738D3400BAF3B1 /* Info.plist */,
 				9BFA84F21C776827009F64E4 /* LaunchScreen.storyboard */,
@@ -192,6 +192,17 @@
 				DE8D72DE2B0F435D001EEF69 /* ios-baseTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DE1906CC2B1096B3000806B5 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				DE99621B2B0DEAAA00126FB1 /* Type */,
+				DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */,
+				DE9962222B0DEB7800126FB1 /* NetworkService.swift */,
+				DE9962272B0DF88100126FB1 /* TestNetworkService.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		DE3887082B1070D000FAEC3C /* A */ = {
@@ -289,15 +300,12 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
-		DE9961FF2B0D9DB300126FB1 /* Network */ = {
+		DE9961FF2B0D9DB300126FB1 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				DE99621B2B0DEAAA00126FB1 /* Type */,
-				DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */,
-				DE9962222B0DEB7800126FB1 /* NetworkService.swift */,
-				DE9962272B0DF88100126FB1 /* TestNetworkService.swift */,
+				DE1906CC2B1096B3000806B5 /* Remote */,
 			);
-			path = Network;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		DE9962022B0DA0CA00126FB1 /* Util */ = {
@@ -318,13 +326,13 @@
 			path = Application/Common;
 			sourceTree = "<group>";
 		};
-		DE9962102B0DD8E900126FB1 /* Module */ = {
+		DE9962102B0DD8E900126FB1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				DE9962112B0DD8FD00126FB1 /* Splash */,
 				DE9961FB2B0D925200126FB1 /* Main */,
 			);
-			path = Module;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		DE9962112B0DD8FD00126FB1 /* Splash */ = {
