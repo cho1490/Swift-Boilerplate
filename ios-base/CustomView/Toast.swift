@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Toast: BaseView {
+final class Toast: BaseView {
     
-    let animateDuration: TimeInterval = 0.5
+    private let animateDuration: TimeInterval = 0.5
         
     private let toastMessageLabel = UILabel().then {
         $0.textColor = .systemBackground
