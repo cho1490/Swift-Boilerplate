@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  MainTabBarController.swift
 //  ios-base
 //
 //  Created by 조상현 on 11/22/23.
@@ -8,7 +8,7 @@
 
 import UIKit 
 
-final class MainController: BaseTabBarController {
+final class MainTabBarController: BaseTabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,4 +6,6 @@
 //  Copyright © 2023 ChoSangHyun. All rights reserved.
 //
 
-import Foundation
+class BViewController: BaseViewController {
+    
+}

@@ -22,14 +22,32 @@ final class Navigator {
     
     func get(segue: Scene) -> UIViewController? {
         let networkService = NetworkService()
+        // let testNetworkService = TestNetworkService(jsonString: "")
         
         switch segue {
         case .splash:
             let splashViewModel = SplashViewModel()
             return SplashViewController(viewModel: splashViewModel, navigator: self)
         case .main:
+            let aViewModel = AViewModel(service: networkService)
+            let aViewController = AViewController(viewModel: aViewModel, navigator: self)
+            aViewController.tabBarItem.title = "a"
+            aViewController.tabBarItem.image = UIImage(systemName: "a.circle.fill")
+            
+            let bViewModel = BViewModel(service: networkService)
+            let bViewController = BViewController(viewModel: bViewModel, navigator: self)
+            bViewController.tabBarItem.title = "b"
+            bViewController.tabBarItem.image = UIImage(systemName: "b.circle.fill")
+            
+            let cViewModel = CViewModel(service: networkService)
+            let cViewController = CViewController(viewModel: cViewModel, navigator: self)
+            cViewController.tabBarItem.title = "c"
+            cViewController.tabBarItem.image = UIImage(systemName: "c.circle.fill")
+            
             let mainViewModel = MainViewModel(service: networkService)
-            return MainViewController(viewModel: mainViewModel, navigator: self)
+            let mainTabBarController = MainTabBarController(viewModel: mainViewModel, navigator: self)
+            mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
+            return mainTabBarController
         }
     } 
     
