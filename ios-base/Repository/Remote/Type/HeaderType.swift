@@ -1,5 +1,5 @@
 //
-//  HedaerType.swift
+//  HeaderType.swift
 //  ios-base
 //
 //  Created by 조상현 on 11/22/23.

@@ -16,3 +16,60 @@
  - [RxCocoa]
  - [Then]
  - [SnapKit]
+
+## 폴더 구조
+```bash
+├── Info.plist
+|
+├── Application
+│   ├── AppDelegate
+│   ├── SceneDelegate
+│   ├── Application
+│   └── Navigator
+| 
+├── Base
+│   ├── BaseViewController
+│   ├── BaseTabBarController
+│   ├── BaseView
+│   └── BaseViewModel
+|
+├── Presentation
+│   ├── Splash
+│   |   ├── SplashViewController
+│   |   └── SplashViewModel
+│   |   
+│   └── Main
+│       ├── MainTabBarController
+│       ├── A
+│       |   |── AViewController
+│       |   └── AViewModel
+│       |
+│       ├── B
+│       |   |── BViewController
+│       |   └── BViewModel
+│       |
+│       └── C
+│           |── CViewController
+│           └── CViewModel
+|
+|── Repository
+│   ├── Remote
+│   |   ├── Type
+│   |   |   |── HeaderType
+│   |   |   |── UrlType
+│   |   |   └── NetworkError
+│   |   |
+│   |   ├── NetworkProtocol
+│   |   ├── NetworkService
+│   |   └── TestNetworkService 
+│   |   
+│   └── Local
+|
+├── Common
+|
+├── Util
+|
+├── Extension
+|
+└── CustomView
+``` 

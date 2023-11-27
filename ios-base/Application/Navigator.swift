@@ -20,7 +20,7 @@ final class Navigator {
         case main
     }
     
-    func get(segue: Scene) -> UIViewController? {
+    func get(segue: Scene) -> UIViewController? {        
         let networkService = NetworkService()
         // let testNetworkService = TestNetworkService(jsonString: "")
         
@@ -41,8 +41,7 @@ final class Navigator {
             let cViewController = CViewController(viewModel: cViewModel, navigator: self)
             cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))            
             
-            let mainViewModel = MainViewModel(service: networkService)
-            let mainTabBarController = MainTabBarController(viewModel: mainViewModel, navigator: self)
+            let mainTabBarController = MainTabBarController(navigator: self)
             mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
                         
             return mainTabBarController

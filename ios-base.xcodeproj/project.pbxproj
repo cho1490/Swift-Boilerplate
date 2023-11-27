@@ -31,13 +31,12 @@
 		DE9962042B0DA0DD00126FB1 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962032B0DA0DD00126FB1 /* ScreenUtil.swift */; };
 		DE9962062B0DA4BE00126FB1 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962052B0DA4BE00126FB1 /* Navigator.swift */; };
 		DE9962082B0DB4F500126FB1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962072B0DB4F500126FB1 /* BaseViewModel.swift */; };
-		DE99620A2B0DB50900126FB1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962092B0DB50900126FB1 /* MainViewModel.swift */; };
 		DE99620F2B0DCA0C00126FB1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99620E2B0DCA0C00126FB1 /* Application.swift */; };
 		DE9962132B0DD90600126FB1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962122B0DD90600126FB1 /* SplashViewController.swift */; };
 		DE9962152B0DDA7300126FB1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962142B0DDA7300126FB1 /* Toast.swift */; };
 		DE9962172B0DDB9100126FB1 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962162B0DDB9100126FB1 /* SplashViewModel.swift */; };
 		DE99621A2B0DE7D700126FB1 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */; };
-		DE99621D2B0DEAB200126FB1 /* HedaerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99621C2B0DEAB200126FB1 /* HedaerType.swift */; };
+		DE99621D2B0DEAB200126FB1 /* HeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99621C2B0DEAB200126FB1 /* HeaderType.swift */; };
 		DE99621F2B0DEAD600126FB1 /* UrlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99621E2B0DEAD600126FB1 /* UrlType.swift */; };
 		DE9962212B0DEB1D00126FB1 /* ConstValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962202B0DEB1D00126FB1 /* ConstValue.swift */; };
 		DE9962232B0DEB7800126FB1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962222B0DEB7800126FB1 /* NetworkService.swift */; };
@@ -94,13 +93,12 @@
 		DE9962032B0DA0DD00126FB1 /* ScreenUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
 		DE9962052B0DA4BE00126FB1 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		DE9962072B0DB4F500126FB1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		DE9962092B0DB50900126FB1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		DE99620E2B0DCA0C00126FB1 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DE9962122B0DD90600126FB1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DE9962142B0DDA7300126FB1 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		DE9962162B0DDB9100126FB1 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
-		DE99621C2B0DEAB200126FB1 /* HedaerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HedaerType.swift; sourceTree = "<group>"; };
+		DE99621C2B0DEAB200126FB1 /* HeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderType.swift; sourceTree = "<group>"; };
 		DE99621E2B0DEAD600126FB1 /* UrlType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlType.swift; sourceTree = "<group>"; };
 		DE9962202B0DEB1D00126FB1 /* ConstValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstValue.swift; sourceTree = "<group>"; };
 		DE9962222B0DEB7800126FB1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -205,6 +203,13 @@
 			path = Remote;
 			sourceTree = "<group>";
 		};
+		DE1991A12B142EDE001409F7 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		DE3887082B1070D000FAEC3C /* A */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				DE9961FC2B0D926700126FB1 /* MainTabBarController.swift */,
-				DE9962092B0DB50900126FB1 /* MainViewModel.swift */,
 				DE3887082B1070D000FAEC3C /* A */,
 				DE38870A2B1070D800FAEC3C /* B */,
 				DE3887092B1070D500FAEC3C /* C */,
@@ -304,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1906CC2B1096B3000806B5 /* Remote */,
+				DE1991A12B142EDE001409F7 /* Local */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -347,7 +352,7 @@
 		DE99621B2B0DEAAA00126FB1 /* Type */ = {
 			isa = PBXGroup;
 			children = (
-				DE99621C2B0DEAB200126FB1 /* HedaerType.swift */,
+				DE99621C2B0DEAB200126FB1 /* HeaderType.swift */,
 				DE99621E2B0DEAD600126FB1 /* UrlType.swift */,
 				DE9962242B0DEC6D00126FB1 /* NetworkError.swift */,
 			);
@@ -543,14 +548,13 @@
 				9B0C72711C738D3400BAF3B1 /* AppDelegate.swift in Sources */,
 				DE3887142B10711400FAEC3C /* BViewModel.swift in Sources */,
 				DE9962152B0DDA7300126FB1 /* Toast.swift in Sources */,
-				DE99621D2B0DEAB200126FB1 /* HedaerType.swift in Sources */,
+				DE99621D2B0DEAB200126FB1 /* HeaderType.swift in Sources */,
 				DE99620F2B0DCA0C00126FB1 /* Application.swift in Sources */,
 				DE9962132B0DD90600126FB1 /* SplashViewController.swift in Sources */,
 				DE9962212B0DEB1D00126FB1 /* ConstValue.swift in Sources */,
 				DE9962062B0DA4BE00126FB1 /* Navigator.swift in Sources */,
 				DE9962042B0DA0DD00126FB1 /* ScreenUtil.swift in Sources */,
 				DE9961F52B0D8CE900126FB1 /* SceneDelegate.swift in Sources */,
-				DE99620A2B0DB50900126FB1 /* MainViewModel.swift in Sources */,
 				DE3887102B10710500FAEC3C /* CViewController.swift in Sources */,
 				DE9962172B0DDB9100126FB1 /* SplashViewModel.swift in Sources */,
 				DE9962082B0DB4F500126FB1 /* BaseViewModel.swift in Sources */,
