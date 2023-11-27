@@ -20,56 +20,56 @@
 ## 폴더 구조
 ```bash
 ├── Info.plist
-|
+│
 ├── Application
 │   ├── AppDelegate
 │   ├── SceneDelegate
 │   ├── Application
 │   └── Navigator
-| 
+│ 
 ├── Base
 │   ├── BaseViewController
 │   ├── BaseTabBarController
 │   ├── BaseView
 │   └── BaseViewModel
-|
+│
 ├── Presentation
 │   ├── Splash
-│   |   ├── SplashViewController
-│   |   └── SplashViewModel
-│   |   
+│   │   ├── SplashViewController
+│   │   └── SplashViewModel
+│   │   
 │   └── Main
 │       ├── MainTabBarController
 │       ├── A
-│       |   |── AViewController
-│       |   └── AViewModel
-│       |
+│       │   ├── AViewController
+│       │   └── AViewModel
+│       │
 │       ├── B
-│       |   |── BViewController
-│       |   └── BViewModel
-│       |
+│       │   ├── BViewController
+│       │   └── BViewModel
+│       │
 │       └── C
-│           |── CViewController
+│           ├── CViewController
 │           └── CViewModel
-|
-|── Repository
+│
+├── Repository
 │   ├── Remote
-│   |   ├── Type
-│   |   |   |── HeaderType
-│   |   |   |── UrlType
-│   |   |   └── NetworkError
-│   |   |
-│   |   ├── NetworkProtocol
-│   |   ├── NetworkService
-│   |   └── TestNetworkService 
-│   |   
+│   │   ├── Type
+│   │   │   ├── HeaderType
+│   │   │   ├── UrlType
+│   │   │   └── NetworkError
+│   │   │
+│   │   ├── NetworkProtocol
+│   │   ├── NetworkService
+│   │   └── TestNetworkService 
+│   │   
 │   └── Local
-|
+│
 ├── Common
-|
+│
 ├── Util
-|
+│
 ├── Extension
-|
+│
 └── CustomView
 ``` 
