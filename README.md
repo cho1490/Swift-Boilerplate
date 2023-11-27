@@ -21,40 +21,40 @@
 ```bash
 ├── Info.plist
 │
-├── Application
+├── 📂 Application
 │   ├── AppDelegate
 │   ├── SceneDelegate
 │   ├── Application
 │   └── Navigator
 │ 
-├── Base
+├── 📂 Base
 │   ├── BaseViewController
 │   ├── BaseTabBarController
 │   ├── BaseView
 │   └── BaseViewModel
 │
-├── Presentation
-│   ├── Splash
+├── 📂 Presentation
+│   ├── 📂 Splash
 │   │   ├── SplashViewController
 │   │   └── SplashViewModel
 │   │   
-│   └── Main
+│   └── 📂 Main
 │       ├── MainTabBarController
-│       ├── A
+│       ├── 📂 A
 │       │   ├── AViewController
 │       │   └── AViewModel
 │       │
-│       ├── B
+│       ├── 📂 B
 │       │   ├── BViewController
 │       │   └── BViewModel
 │       │
-│       └── C
+│       └── 📂 C
 │           ├── CViewController
 │           └── CViewModel
 │
-├── Repository
-│   ├── Remote
-│   │   ├── Type
+├── 📂 Repository
+│   ├── 📂 Remote
+│   │   ├── 📂 Type
 │   │   │   ├── HeaderType
 │   │   │   ├── UrlType
 │   │   │   └── NetworkError
@@ -63,13 +63,13 @@
 │   │   ├── NetworkService
 │   │   └── TestNetworkService 
 │   │   
-│   └── Local
+│   └── 📂 Local
 │
-├── Common
+├── 📂 Common
 │
-├── Util
+├── 📂 Util
 │
-├── Extension
+├── 📂 Extension
 │
-└── CustomView
+└── 📂 CustomView
 ``` 
