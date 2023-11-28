@@ -12,11 +12,11 @@ class BaseViewModel {
     
     init(service: NetworkProtocol? = nil) {
         self.service = service
-        debugPrint("\(type(of: self)): init")
+        DebugUtil.debugPrint("\(type(of: self)): init")
     }
     
     deinit {
-        debugPrint("\(type(of: self)): Deinited")        
+        DebugUtil.debugPrint("\(type(of: self)): Deinited")        
     }
 }
 
