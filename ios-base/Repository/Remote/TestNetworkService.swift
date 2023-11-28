@@ -35,7 +35,7 @@ final class TestNetworkService: NetworkProtocol {
     private func result<T: Decodable>() async throws -> Result<T, Error> {
         let data = jsonString.data(using: .utf8)!
         guard let result = try? JSONDecoder().decode(T.self, from: data) else {
-            return .failure(NetworkError.decodingFailed)
+            return .failure(NetworkError.DecodingError)
         }
         
         return .success(result)

@@ -37,6 +37,10 @@ class BaseViewController: UIViewController {
                 
         initConstraints()
         binding()
+        
+        #if DEBUG
+        print("Debug")
+        #endif
     }
      
     func useSafeAreaView() {

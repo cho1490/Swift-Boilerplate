@@ -53,17 +53,25 @@
 │           └── CViewModel
 │
 ├── 📂 Repository
+│   ├── 📂 Error
+│   │   ├── NetworkError
+│   │   └── KeyChainError
+│   │
 │   ├── 📂 Remote
 │   │   ├── 📂 Type
 │   │   │   ├── HeaderType
-│   │   │   ├── UrlType
-│   │   │   └── NetworkError
+│   │   │   └── UrlType
 │   │   │
 │   │   ├── NetworkProtocol
 │   │   ├── NetworkService
 │   │   └── TestNetworkService 
 │   │   
 │   └── 📂 Local
+│       ├── 📂 UserDefaults 
+│       │   └── UserDefaultsHelper
+│       │
+│       └── 📂 KeyChain
+│           └── KeychainHelper
 │
 ├── 📂 Common
 │

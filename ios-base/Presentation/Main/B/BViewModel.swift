@@ -8,7 +8,7 @@
 
 import RxSwift
 import RxCocoa
- 
+
 final class BViewModel: BaseViewModel, BaseViewModelProtocol {
  
     struct Input {

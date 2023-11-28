@@ -26,7 +26,7 @@ final class NetworkService: NetworkProtocol {
         
         let urlString = "\(urlType.value())\(queryString)"
         guard let urlRequest = makeUrlRequest(from: urlString, requestType: "GET") else {
-            return .failure(NetworkError.invalidUrl)
+            return .failure(NetworkError.InvalidUrl)
         }
         
         return try await dataTask(with: urlRequest)
@@ -36,7 +36,7 @@ final class NetworkService: NetworkProtocol {
     func POST<T: Decodable>(headerType: HeaderType, urlType: UrlType, parameters: [String : Any], returnType: T.Type) async throws -> Result<T, Error> {
         let urlString = "\(urlType.value())"
         guard var urlRequest = makeUrlRequest(from: urlString, requestType: "POST") else {
-            return .failure(NetworkError.invalidUrl)
+            return .failure(NetworkError.InvalidUrl)
         }
         urlRequest.httpBody = parameters.percentEncoded()
         
@@ -47,7 +47,7 @@ final class NetworkService: NetworkProtocol {
     func PUT<T: Decodable>(headerType: HeaderType, urlType: UrlType, parameters: [String : Any], returnType: T.Type) async throws -> Result<T, Error> {
         let urlString = "\(urlType.value())"
         guard var urlRequest = makeUrlRequest(from: urlString, requestType: "PUT") else {
-            return .failure(NetworkError.invalidUrl)
+            return .failure(NetworkError.InvalidUrl)
         }
         urlRequest.httpBody = parameters.percentEncoded()
         
@@ -58,7 +58,7 @@ final class NetworkService: NetworkProtocol {
     func DELETE<T: Decodable>(headerType: HeaderType, urlType: UrlType, parameters: [String : Any], returnType: T.Type) async throws -> Result<T, Error> {
         let urlString = "\(urlType.value())"
         guard var urlRequest = makeUrlRequest(from: urlString, requestType: "PUT") else {
-            return .failure(NetworkError.invalidUrl)
+            return .failure(NetworkError.InvalidUrl)
         }
         urlRequest.httpBody = parameters.percentEncoded()
         
@@ -79,11 +79,11 @@ final class NetworkService: NetworkProtocol {
     private func dataTask<T: Decodable>(with urlRequest: URLRequest) async throws -> Result<T, Error> {
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         guard let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode) else {
-            return .failure(NetworkError.statusCodeError)
+            return .failure(NetworkError.StatusCodeError)
         }
         
         guard let result = try? JSONDecoder().decode(T.self, from: data) else {
-            return .failure(NetworkError.decodingFailed)
+            return .failure(NetworkError.DecodingError)
         }
         
         return .success(result)

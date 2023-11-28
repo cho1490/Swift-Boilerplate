@@ -11,7 +11,7 @@ import UIKit
 struct Theme {
     
     struct Color {
-        static let base = UIColor(r: 138, g: 197, b: 176, a: 1)
+        static let `default` = UIColor(r: 138, g: 197, b: 176, a: 1)
     }
     
     struct Radius {

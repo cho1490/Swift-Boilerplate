@@ -7,7 +7,7 @@
 //
 
 enum NetworkError: Error {
-    case invalidUrl
-    case statusCodeError
-    case decodingFailed
+    case InvalidUrl
+    case StatusCodeError
+    case DecodingError
 }
