@@ -1,5 +1,5 @@
 ## Swift-Boilerplate
-- 내 스타일대로 프로젝트 템플릿
+- 내 스타일대로 만든 프로젝트 템플릿
 - Code base, MVVM
 
 ## 프로젝트 생성하는 방법

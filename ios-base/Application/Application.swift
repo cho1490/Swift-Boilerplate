@@ -18,7 +18,7 @@ final class Application {
     
     func initScene(in window: UIWindow) {
         self.window = window
-                
         navigator.show(segue: .splash, sender: nil, transition: .root)
     }
+    
 }

@@ -20,33 +20,28 @@ final class Navigator {
         case main
     }
     
-    func get(segue: Scene) -> UIViewController? {        
-        let networkService = NetworkService()
-        // let testNetworkService = TestNetworkService(jsonString: "")
-        
+    func get(segue: Scene) -> UIViewController? {                
         switch segue {
         case .splash:
-            let splashViewModel = SplashViewModel()
-            return SplashViewController(viewModel: splashViewModel, navigator: self)
+            return SplashViewController(viewModel: SplashViewModel(), navigator: self)
         case .main:
-            let aViewModel = AViewModel(service: networkService)
-            let aViewController = AViewController(viewModel: aViewModel, navigator: self)
+            let aViewModel = AViewModel(service: NetworkService())
+            let aViewController = UINavigationController(rootViewController: AViewController(viewModel: aViewModel, navigator: self))
             aViewController.setTabBarItem(title: "a", image: UIImage(systemName: "a.circle.fill"))
-            
-            let bViewModel = BViewModel(service: networkService)
-            let bViewController = BViewController(viewModel: bViewModel, navigator: self)
+
+            let bViewModel = BViewModel(service: NetworkService())
+            let bViewController = UINavigationController(rootViewController: BViewController(viewModel: bViewModel, navigator: self))
             bViewController.setTabBarItem(title: "b", image: UIImage(systemName: "b.circle.fill"))
-            
-            let cViewModel = CViewModel(service: networkService)
+
+            let cViewModel = CViewModel(service: NetworkService())
             let cViewController = CViewController(viewModel: cViewModel, navigator: self)
-            cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))            
-            
+            cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))
+
             let mainTabBarController = MainTabBarController(navigator: self)
             mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
-                        
             return mainTabBarController
         }
-    } 
+    }
     
     enum Transition {
         case root
@@ -100,9 +95,9 @@ final class Navigator {
     
     func pop(sender: UIViewController?, toRoot: Bool = false) {
         guard let sender = sender?.navigationController else {
-            fatalError("UINavigationController does not exist")
+             fatalError("UINavigationController does not exist")
         }
-      
+
         if toRoot {
             sender.popToRootViewController(animated: true)
         } else {
@@ -112,7 +107,7 @@ final class Navigator {
 
     func dismiss(sender: UIViewController?) {
         guard let sender = sender else {
-            fatalError("UIViewController does not exist")            
+             fatalError("UIViewController does not exist")
         }
         
         sender.dismiss(animated: true)

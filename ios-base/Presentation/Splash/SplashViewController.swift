@@ -11,9 +11,8 @@ import RxCocoa
 
 class SplashViewController: BaseViewController {
     
-    let logo = UILabel().then {
-        $0.text = "💸"
-        $0.font = .systemFont(ofSize: 68)
+    let logo = UIImageView().then {
+        $0.image = UIImage(systemName: "apple.terminal.fill")
     }
     
     let readyToLaunch = PublishSubject<Void>()
@@ -22,8 +21,12 @@ class SplashViewController: BaseViewController {
         super.viewDidLoad()
     }
     
+    override func initProperties() {
+        view.backgroundColor = Theme.Color.base
+    }
+    
     override func initConstraints() {
-        useSafeAreaView()
+        useSafeArea()
         
         safeArea.addSubview(logo)
         logo.snp.makeConstraints {

@@ -18,7 +18,7 @@ final class Toast: BaseView {
     }
     
     override func initProperties() {
-        backgroundColor = .label.withAlphaComponent(0.8)
+        backgroundColor = .label.withAlphaComponent(Theme.Opacity.Low)
         alpha = 0.0
         layer.cornerRadius = 10
         clipsToBounds = true

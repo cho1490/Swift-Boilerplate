@@ -46,6 +46,10 @@
 		DE9962232B0DEB7800126FB1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962222B0DEB7800126FB1 /* NetworkService.swift */; };
 		DE9962252B0DEC6D00126FB1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962242B0DEC6D00126FB1 /* NetworkError.swift */; };
 		DE9962282B0DF88100126FB1 /* TestNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962272B0DF88100126FB1 /* TestNetworkService.swift */; };
+		DEF00C1C2B18537B002CE6D8 /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C1B2B18537B002CE6D8 /* LargeNavigationBar.swift */; };
+		DEF00C1E2B185401002CE6D8 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C1D2B185401002CE6D8 /* BaseNavigationBar.swift */; };
+		DEF00C212B1856E6002CE6D8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C202B1856E6002CE6D8 /* NavigationBar.swift */; };
+		DEF00C252B187AA8002CE6D8 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C242B187AA8002CE6D8 /* UINavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		DE9962222B0DEB7800126FB1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DE9962242B0DEC6D00126FB1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DE9962272B0DF88100126FB1 /* TestNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkService.swift; sourceTree = "<group>"; };
+		DEF00C1B2B18537B002CE6D8 /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
+		DEF00C1D2B185401002CE6D8 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
+		DEF00C202B1856E6002CE6D8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		DEF00C242B187AA8002CE6D8 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +286,7 @@
 			children = (
 				DE38871A2B107BD000FAEC3C /* UIColor.swift */,
 				DE1906BA2B107FD5000806B5 /* UIViewController.swift */,
+				DEF00C242B187AA8002CE6D8 /* UINavigationController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 		DE9961FE2B0D9DA400126FB1 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				DEF00C1F2B1856D0002CE6D8 /* NavigationBar */,
 				DE9962142B0DDA7300126FB1 /* Toast.swift */,
 			);
 			path = CustomView;
@@ -394,6 +404,16 @@
 				DE99621E2B0DEAD600126FB1 /* UrlType.swift */,
 			);
 			path = Type;
+			sourceTree = "<group>";
+		};
+		DEF00C1F2B1856D0002CE6D8 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DEF00C1D2B185401002CE6D8 /* BaseNavigationBar.swift */,
+				DEF00C202B1856E6002CE6D8 /* NavigationBar.swift */,
+				DEF00C1B2B18537B002CE6D8 /* LargeNavigationBar.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,9 +608,12 @@
 				DE99621D2B0DEAB200126FB1 /* HeaderType.swift in Sources */,
 				DE99620F2B0DCA0C00126FB1 /* Application.swift in Sources */,
 				DE9962132B0DD90600126FB1 /* SplashViewController.swift in Sources */,
+				DEF00C1C2B18537B002CE6D8 /* LargeNavigationBar.swift in Sources */,
 				DE9962212B0DEB1D00126FB1 /* ConstValue.swift in Sources */,
+				DEF00C212B1856E6002CE6D8 /* NavigationBar.swift in Sources */,
 				DE9962062B0DA4BE00126FB1 /* Navigator.swift in Sources */,
 				DE9962042B0DA0DD00126FB1 /* ScreenUtil.swift in Sources */,
+				DEF00C1E2B185401002CE6D8 /* BaseNavigationBar.swift in Sources */,
 				DE9961F52B0D8CE900126FB1 /* SceneDelegate.swift in Sources */,
 				DE3887102B10710500FAEC3C /* CViewController.swift in Sources */,
 				DE9962172B0DDB9100126FB1 /* SplashViewModel.swift in Sources */,
@@ -601,6 +624,7 @@
 				DE1991A52B143B00001409F7 /* UserDefaultsHelper.swift in Sources */,
 				DE99621A2B0DE7D700126FB1 /* NetworkProtocol.swift in Sources */,
 				DE1991A72B143B5E001409F7 /* KeychainHelper.swift in Sources */,
+				DEF00C252B187AA8002CE6D8 /* UINavigationController.swift in Sources */,
 				DE38871B2B107BD000FAEC3C /* UIColor.swift in Sources */,
 				DE3887072B1070A600FAEC3C /* BaseTabBarController.swift in Sources */,
 				DE9961F82B0D91F800126FB1 /* BaseViewController.swift in Sources */,

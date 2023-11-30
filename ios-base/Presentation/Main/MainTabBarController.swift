@@ -9,11 +9,15 @@
 import UIKit 
 
 final class MainTabBarController: BaseTabBarController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
+    override func initProperties() {
+
+    }
+
     override func initConstraints() {
         
     }

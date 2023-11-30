@@ -9,17 +9,18 @@
 import UIKit
 
 class AViewController: BaseViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
+    override func initProperties() { 
+    }
+
     override func initConstraints() {
-        
     }
     
     override func binding() {
-        
     }
-            
+
 }
