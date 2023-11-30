@@ -35,6 +35,7 @@ class BaseTabBarController: UITabBarController {
         view.backgroundColor = .systemBackground
         
         tabBar.tintColor = .label
+        tabBar.unselectedItemTintColor = .label.withAlphaComponent(0.3)
         tabBar.layer.borderWidth = 0.5
         tabBar.layer.borderColor = UIColor.label.withAlphaComponent(0.2).cgColor
         
