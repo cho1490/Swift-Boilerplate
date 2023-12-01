@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import RxViewController
 import RxCocoa
 
 class SplashViewController: BaseViewController {
@@ -14,9 +15,7 @@ class SplashViewController: BaseViewController {
     let logo = UIImageView().then {
         $0.image = UIImage(systemName: "apple.terminal.fill")
     }
-    
-    let readyToLaunch = PublishSubject<Void>()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -39,30 +38,17 @@ class SplashViewController: BaseViewController {
             return
         }
             
-        let input = SplashViewModel.Input(readyToLaunch: readyToLaunch)
+        let input = SplashViewModel.Input(viewDidAppearTrigger: rx.viewDidAppear.asDriver().map { _ in () })
         let output = viewModel.transform(input: input)
-        
-        output.pushNextViewController.subscribe(onNext: { [weak self] in
+        output.pushViewController.drive(onNext: { [weak self] in
             guard let self = self else {
                 return
             }
-                        
+
             DispatchQueue.main.async {
                 self.navigator.show(segue: .main, sender: self, transition: .root)
             }
-        }).disposed(by: self.disposeBag)
+        }).disposed(by: disposeBag)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-                     
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) { [weak self] in
-            guard let self = self else {
-                return
-            }
-            
-            readyToLaunch.onNext(())
-        }
-    }
-    
 }

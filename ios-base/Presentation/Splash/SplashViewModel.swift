@@ -7,20 +7,22 @@
 //
 
 import RxSwift
+import RxCocoa
 
 class SplashViewModel: BaseViewModel, BaseViewModelProtocol {
     
     struct Input {
-        let readyToLaunch: PublishSubject<Void>
+        let viewDidAppearTrigger: Driver<Void>
     }
     
     struct Output {
-        let pushNextViewController: Observable<Void>
+        let pushViewController: Driver<Void>
     }
-     
+    private let pushViewControllerSubject: BehaviorSubject<Void> = .init(value: ())
+
     func transform(input: Input) -> Output {
-        let pushNextViewController = Observable.of(input.readyToLaunch).merge()
-        return Output(pushNextViewController: pushNextViewController)
-    }        
+        let pushViewController = input.viewDidAppearTrigger.asDriver(onErrorDriveWith: .never())
+        return Output(pushViewController: pushViewController)
+    }
     
 }

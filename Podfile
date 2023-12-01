@@ -8,6 +8,7 @@ target 'ios-base' do
   # Pods for ios-base
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RxViewController'
     pod 'Then'
     pod 'SnapKit'
 
