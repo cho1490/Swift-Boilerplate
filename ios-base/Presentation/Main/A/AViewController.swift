@@ -14,12 +14,12 @@ class AViewController: BaseViewController {
         super.viewDidLoad()
     }
 
-    override func initProperties() { 
-    }
-
     override func initConstraints() {
     }
-    
+
+    override func initProperties() {
+    }
+
     override func binding() {
     }
 

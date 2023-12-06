@@ -45,8 +45,8 @@ class BaseViewController: UIViewController {
             topBarConstraint = $0.height.equalTo(ScreenUtil.getSafeAreaSize(direction: .top)).constraint
         }
 
-        initProperties()
         initConstraints()
+        initProperties()
         binding()
     }
     
@@ -91,13 +91,13 @@ class BaseViewController: UIViewController {
 }
 
 protocol BaseViewControllerProtocol {
-    func initProperties()
     func initConstraints()
+    func initProperties()
     func binding()
 }
 
 extension BaseViewController: BaseViewControllerProtocol {
-    @objc func initProperties() { }
     @objc func initConstraints() { }
+    @objc func initProperties() { }
     @objc func binding() { }
 }

@@ -54,7 +54,7 @@ class BaseTabBarController: UITabBarController {
 }
 
 extension BaseTabBarController: BaseViewControllerProtocol {
-    @objc func initProperties() { }
     @objc func initConstraints() { }
+    @objc func initProperties() { }
     @objc func binding() { }
 }

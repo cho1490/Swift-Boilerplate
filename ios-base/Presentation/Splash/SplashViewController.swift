@@ -11,28 +11,19 @@ import RxViewController
 import RxCocoa
 
 class SplashViewController: BaseViewController {
-    
-    let logo = UIImageView().then {
-        $0.image = UIImage(systemName: "apple.terminal.fill")
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    override func initConstraints() {
+        useSafeArea()
+    }
+
     override func initProperties() {
         view.backgroundColor = Theme.Color.base
     }
-    
-    override func initConstraints() {
-        useSafeArea()
-        
-        safeArea.addSubview(logo)
-        logo.snp.makeConstraints {
-            $0.center.equalTo(safeArea)
-        }
-    }
-    
+
     override func binding() {
         guard let viewModel = viewModel as? SplashViewModel else {
             return

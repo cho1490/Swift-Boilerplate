@@ -16,14 +16,7 @@ final class Toast: BaseView {
         $0.textColor = .systemBackground
         $0.numberOfLines = 0
     }
-    
-    override func initProperties() {
-        backgroundColor = .label.withAlphaComponent(Theme.Opacity.Low)
-        alpha = 0.0
-        layer.cornerRadius = 10
-        clipsToBounds = true
-    }
-    
+
     override func initConstraints() {
         addSubview(toastMessageLabel)
         toastMessageLabel.snp.makeConstraints {
@@ -33,7 +26,14 @@ final class Toast: BaseView {
             $0.trailing.equalTo(snp.trailing).offset(-16)
         }
     }
-    
+
+    override func initProperties() {
+        backgroundColor = .label.withAlphaComponent(Theme.Opacity.Low)
+        alpha = 0.0
+        layer.cornerRadius = 10
+        clipsToBounds = true
+    }
+
     func show(message: String, during time: TimeInterval) {
         toastMessageLabel.text = message
         

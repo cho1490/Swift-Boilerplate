@@ -10,11 +10,6 @@ import UIKit
 
 class LargeNavigationBar: BaseNavigationBar {
 
-    override func initProperties() {
-        contentHeight = 62
-        titleLabel.font = Theme.Font.NavigationHeader
-    }
-
     override func initConstraints() {
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints {
@@ -28,5 +23,11 @@ class LargeNavigationBar: BaseNavigationBar {
             $0.trailing.centerY.equalToSuperview()
         }
     }
-    
+
+
+    override func initProperties() {
+        contentHeight = 62
+        titleLabel.font = Theme.Font.NavigationHeader
+    }
+
 }

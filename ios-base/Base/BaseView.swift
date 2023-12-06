@@ -12,24 +12,24 @@ class BaseView: UIView {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
-        initProperties()
         initConstraints()
+        initProperties()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initProperties()
         initConstraints()
+        initProperties()
     }
     
 }
 
 protocol BaseViewProtocol {
-    func initProperties()
     func initConstraints()
+    func initProperties()
 }
 
 extension BaseView: BaseViewProtocol {
-    @objc func initProperties() { }
     @objc func initConstraints() { }
+    @objc func initProperties() { }
 }

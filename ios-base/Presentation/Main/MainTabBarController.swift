@@ -14,16 +14,13 @@ final class MainTabBarController: BaseTabBarController {
         super.viewDidLoad()
     }
 
-    override func initProperties() {
-
-    }
-
     override func initConstraints() {
-        
     }
-    
+
+    override func initProperties() {
+    }
+
     override func binding() {
-        
     }
-  
+
 }

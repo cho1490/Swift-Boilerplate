@@ -12,11 +12,6 @@ class NavigationBar: BaseNavigationBar {
 
     private lazy var backButton = makeButton(type: .back, image: makeSystemImage(name: "chevron.backward"))
 
-    override func initProperties() {
-        contentHeight = 44
-        titleLabel.font = Theme.Font.NavigationTitle
-    }
-
     override func initConstraints() {
         addSubview(backButton)
         backButton.snp.makeConstraints {
@@ -34,5 +29,10 @@ class NavigationBar: BaseNavigationBar {
         }
     }
 
+    override func initProperties() {
+        contentHeight = 44
+        titleLabel.font = Theme.Font.NavigationTitle
+    }
+    
 }
 
