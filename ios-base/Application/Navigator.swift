@@ -25,15 +25,15 @@ final class Navigator {
         case .splash:
             return SplashViewController(viewModel: SplashViewModel(), navigator: self)
         case .main:
-            let aViewModel = AViewModel(service: NetworkService())
+            let aViewModel = AViewModel()
             let aViewController = UINavigationController(rootViewController: AViewController(viewModel: aViewModel, navigator: self))
             aViewController.setTabBarItem(title: "a", image: UIImage(systemName: "a.circle.fill"))
 
-            let bViewModel = BViewModel(service: NetworkService())
+            let bViewModel = BViewModel()
             let bViewController = UINavigationController(rootViewController: BViewController(viewModel: bViewModel, navigator: self))
             bViewController.setTabBarItem(title: "b", image: UIImage(systemName: "b.circle.fill"))
 
-            let cViewModel = CViewModel(service: NetworkService())
+            let cViewModel = CViewModel()
             let cViewController = CViewController(viewModel: cViewModel, navigator: self)
             cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))
 

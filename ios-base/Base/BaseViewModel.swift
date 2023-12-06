@@ -6,12 +6,13 @@
 //  Copyright © 2023 ChoSangHyun. All rights reserved.
 // 
 
+import RxSwift
+
 class BaseViewModel {
-  
-    var service: NetworkProtocol?
-    
-    init(service: NetworkProtocol? = nil) {
-        self.service = service
+
+    var disposeBag = DisposeBag()
+
+    init() {
         DebugUtil.debugPrint("\(type(of: self)): init")
     }
     
