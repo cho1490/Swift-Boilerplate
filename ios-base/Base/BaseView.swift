@@ -24,12 +24,7 @@ class BaseView: UIView {
     
 }
 
-protocol BaseViewProtocol {
-    func initConstraints()
-    func initProperties()
-}
-
-extension BaseView: BaseViewProtocol {
+extension BaseView: BaseUIProtocol {
     @objc func initConstraints() { }
     @objc func initProperties() { }
 }

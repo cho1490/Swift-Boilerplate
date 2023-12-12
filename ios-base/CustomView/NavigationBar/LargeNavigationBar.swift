@@ -24,7 +24,6 @@ class LargeNavigationBar: BaseNavigationBar {
         }
     }
 
-
     override func initProperties() {
         contentHeight = 62
         titleLabel.font = Theme.Font.NavigationHeader

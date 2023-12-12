@@ -19,8 +19,5 @@ final class MainTabBarController: BaseTabBarController {
 
     override func initProperties() {
     }
-
-    override func binding() {
-    }
-
+    
 }

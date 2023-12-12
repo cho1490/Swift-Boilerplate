@@ -47,6 +47,7 @@
 		DE9962232B0DEB7800126FB1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962222B0DEB7800126FB1 /* NetworkService.swift */; };
 		DE9962252B0DEC6D00126FB1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962242B0DEC6D00126FB1 /* NetworkError.swift */; };
 		DE9962282B0DF88100126FB1 /* TestNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962272B0DF88100126FB1 /* TestNetworkService.swift */; };
+		DEA1613F2B281CFF0045ADA6 /* BaseUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1613E2B281CFF0045ADA6 /* BaseUIProtocol.swift */; };
 		DEF00C1C2B18537B002CE6D8 /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C1B2B18537B002CE6D8 /* LargeNavigationBar.swift */; };
 		DEF00C1E2B185401002CE6D8 /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C1D2B185401002CE6D8 /* BaseNavigationBar.swift */; };
 		DEF00C212B1856E6002CE6D8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF00C202B1856E6002CE6D8 /* NavigationBar.swift */; };
@@ -118,6 +119,7 @@
 		DE9962222B0DEB7800126FB1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		DE9962242B0DEC6D00126FB1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DE9962272B0DF88100126FB1 /* TestNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkService.swift; sourceTree = "<group>"; };
+		DEA1613E2B281CFF0045ADA6 /* BaseUIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIProtocol.swift; sourceTree = "<group>"; };
 		DEF00C1B2B18537B002CE6D8 /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
 		DEF00C1D2B185401002CE6D8 /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
 		DEF00C202B1856E6002CE6D8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				DE3887062B1070A600FAEC3C /* BaseTabBarController.swift */,
 				DE9961F92B0D920400126FB1 /* BaseView.swift */,
 				DE9962072B0DB4F500126FB1 /* BaseViewModel.swift */,
+				DEA1613E2B281CFF0045ADA6 /* BaseUIProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				DE38871B2B107BD000FAEC3C /* UIColor.swift in Sources */,
 				DE3887072B1070A600FAEC3C /* BaseTabBarController.swift in Sources */,
 				DE990F7C2B19BEAC00A5E0BC /* UIButton.swift in Sources */,
+				DEA1613F2B281CFF0045ADA6 /* BaseUIProtocol.swift in Sources */,
 				DE9961F82B0D91F800126FB1 /* BaseViewController.swift in Sources */,
 				DE9962232B0DEB7800126FB1 /* NetworkService.swift in Sources */,
 				DE99621F2B0DEAD600126FB1 /* UrlType.swift in Sources */,

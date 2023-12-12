@@ -17,7 +17,6 @@ class SplashViewController: BaseViewController {
     }
     
     override func initConstraints() {
-        useSafeArea()
     }
 
     override func initProperties() {

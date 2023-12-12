@@ -37,7 +37,7 @@ final class Navigator {
             let cViewController = CViewController(viewModel: cViewModel, navigator: self)
             cViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))
 
-            let mainTabBarController = MainTabBarController(navigator: self)
+            let mainTabBarController = MainTabBarController()
             mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
             return mainTabBarController
         }

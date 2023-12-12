@@ -12,9 +12,9 @@ import SnapKit
 
 class BaseViewController: UIViewController {
 
-    var topBar = UIView()
-    private var topBarConstraint: Constraint?
+    private var navigationBarArea = UIView()
     var navigationBar: BaseNavigationBar?
+    private var navigationBarHeightConstraint: Constraint?
 
     let safeArea = UIView()
     
@@ -36,13 +36,11 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemBackground
         
-        view.addSubview(topBar)
-        topBar.snp.makeConstraints {
+        view.addSubview(navigationBarArea)
+        navigationBarArea.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()
-            topBarConstraint = $0.height.equalTo(ScreenUtil.getSafeAreaSize(direction: .top)).constraint
+            navigationBarHeightConstraint = $0.height.equalTo(ScreenUtil.safeAreaSize.top).constraint
         }
 
         initConstraints()
@@ -67,13 +65,13 @@ class BaseViewController: UIViewController {
             return
         }
 
-        topBarConstraint?.deactivate()
-        topBar.snp.makeConstraints {
-            topBarConstraint = $0.height.equalTo(ScreenUtil.getSafeAreaSize(direction: .top) +
-                                                        navigationBar.contentHeight).constraint
+        navigationBarHeightConstraint?.deactivate()
+        navigationBarArea.snp.makeConstraints {
+            navigationBarHeightConstraint = $0.height.equalTo(ScreenUtil.safeAreaSize.top +
+                                                              navigationBar.contentHeight).constraint
         }
 
-        topBar.addSubview(navigationBar)
+        navigationBarArea.addSubview(navigationBar)
         navigationBar.snp.makeConstraints {
             $0.leading.bottom.trailing.equalToSuperview()
             $0.height.equalTo(navigationBar.contentHeight)
@@ -83,7 +81,7 @@ class BaseViewController: UIViewController {
     func useSafeArea() {
         view.addSubview(safeArea)
         safeArea.snp.makeConstraints {
-            $0.top.equalTo(topBar.snp.bottom)
+            $0.top.equalTo(navigationBarArea.snp.bottom)
             $0.leading.bottom.trailing.equalTo(view.safeAreaLayoutGuide)            
         }
         safeArea.backgroundColor = .clear
@@ -91,12 +89,10 @@ class BaseViewController: UIViewController {
 }
 
 protocol BaseViewControllerProtocol {
-    func initConstraints()
-    func initProperties()
     func binding()
-}
+} 
 
-extension BaseViewController: BaseViewControllerProtocol {
+extension BaseViewController: BaseUIProtocol, BaseViewControllerProtocol {
     @objc func initConstraints() { }
     @objc func initProperties() { }
     @objc func binding() { }
