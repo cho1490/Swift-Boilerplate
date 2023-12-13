@@ -12,14 +12,14 @@ class BaseView: UIView {
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .systemBackground
+
         initConstraints()
         initProperties()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        initConstraints()
-        initProperties()
     }
     
 }

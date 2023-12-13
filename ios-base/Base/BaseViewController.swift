@@ -36,7 +36,8 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .systemBackground
+
         view.addSubview(navigationBarArea)
         navigationBarArea.snp.makeConstraints {
             $0.top.leading.trailing.equalToSuperview()

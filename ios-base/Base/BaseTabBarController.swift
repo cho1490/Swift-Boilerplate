@@ -17,6 +17,7 @@ class BaseTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         
         tabBar.tintColor = .label
         tabBar.unselectedItemTintColor = .label.withAlphaComponent(0.3)
