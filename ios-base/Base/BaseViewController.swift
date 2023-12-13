@@ -28,6 +28,7 @@ class BaseViewController: UIViewController {
         self.navigator = navigator
         
         super.init(nibName: nil, bundle: nil)
+        binding()
     }
     
     required init?(coder: NSCoder) {
@@ -46,7 +47,6 @@ class BaseViewController: UIViewController {
 
         initConstraints()
         initProperties()
-        binding()
     }
     
     override func viewWillAppear(_ animated: Bool) {
