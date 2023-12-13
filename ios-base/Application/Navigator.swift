@@ -18,6 +18,7 @@ final class Navigator {
     enum Scene {
         case splash
         case main
+        case bottomSheet(mode: BaseBottomSheetViewController)
     }
     
     func get(segue: Scene) -> UIViewController? {                
@@ -40,6 +41,8 @@ final class Navigator {
             let mainTabBarController = MainTabBarController()
             mainTabBarController.viewControllers = [aViewController, bViewController, cViewController]
             return mainTabBarController
+        case .bottomSheet(let mode):
+            return mode
         }
     }
     
@@ -48,6 +51,7 @@ final class Navigator {
         case present
         case navigate
         case push
+        case modal
     }
         
     func show(segue: Scene, sender: UIViewController?, transition: Transition) {
@@ -89,6 +93,9 @@ final class Navigator {
             } else {
                 fatalError("UINavigationController does not exist")
             }
+        case .modal:
+            target.modalPresentationStyle = .overFullScreen
+            sender.present(target, animated: false)
         default: break
         }
     }
