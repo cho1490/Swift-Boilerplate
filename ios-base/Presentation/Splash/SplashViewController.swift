@@ -8,7 +8,6 @@
 
 import RxSwift
 import RxViewController
-import RxCocoa
 
 class SplashViewController: BaseViewController {
 
@@ -20,25 +19,25 @@ class SplashViewController: BaseViewController {
     }
 
     override func initProperties() {
-        view.backgroundColor = Theme.Color.base
+        view.backgroundColor = .red
     }
 
     override func binding() {
         guard let viewModel = viewModel as? SplashViewModel else {
             return
         }
-            
-        let input = SplashViewModel.Input(viewDidAppearTrigger: rx.viewDidAppear.asDriver().map { _ in () })
-        let output = viewModel.transform(input: input)
-        output.pushViewController.drive(onNext: { [weak self] in
-            guard let self = self else {
-                return
-            }
 
-            DispatchQueue.main.async {
+        let input = SplashViewModel.Input(loadRequriedData: rx.viewDidAppear.map { _ in () })
+        let output = viewModel.transform(input: input)
+
+        output.loadedRequiredData
+            .asDriver(onErrorJustReturn: ())
+            .drive(onNext: { [weak self] in
+                guard let self = self else {
+                    return
+                }
                 self.navigator.show(segue: .main, sender: self, transition: .root)
-            }
-        }).disposed(by: disposeBag)
+            }).disposed(by: disposeBag)
     }
 
 }

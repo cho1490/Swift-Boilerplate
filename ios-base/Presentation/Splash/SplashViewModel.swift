@@ -12,17 +12,23 @@ import RxCocoa
 class SplashViewModel: BaseViewModel, BaseViewModelProtocol {
     
     struct Input {
-        let viewDidAppearTrigger: Driver<Void>
+        let loadRequriedData: Observable<Void>
     }
     
     struct Output {
-        let pushViewController: Driver<Void>
+        let loadedRequiredData: PublishSubject<Void> = .init()
     }
-    private let pushViewControllerSubject: BehaviorSubject<Void> = .init(value: ())
 
     func transform(input: Input) -> Output {
-        let pushViewController = input.viewDidAppearTrigger.asDriver(onErrorDriveWith: .never())
-        return Output(pushViewController: pushViewController)
+        let output = Output()
+
+        input.loadRequriedData.subscribe(onNext: {
+            DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+                output.loadedRequiredData.onNext(())
+            }
+        }).disposed(by: disposeBag)
+
+        return output
     }
     
 }
