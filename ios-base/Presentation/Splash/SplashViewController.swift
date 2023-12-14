@@ -6,7 +6,6 @@
 //  Copyright © 2023 ChoSangHyun. All rights reserved.
 //
 
-import RxSwift
 import RxViewController
 
 class SplashViewController: BaseViewController {
