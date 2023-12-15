@@ -1,6 +1,9 @@
-## Swift-Boilerplate
+## Swift-Boilerplate (작업중)
 - 내 스타일대로 만든 프로젝트 템플릿
-- Code base, MVVM
+- Clean Architecture (작업중)
+- MVVM
+- Code base UI
+
 
 ## 프로젝트 생성하는 방법
 1. Open Terminal
@@ -14,9 +17,10 @@
 ## 프레임워크
  - [RxSwift]
  - [RxCocoa]
+ - [RxViewController]
  - [Then]
  - [SnapKit]
-
+ 
 ## 폴더 구조
 ```bash
 ├── Info.plist
@@ -52,32 +56,27 @@
 │           ├── CViewController
 │           └── CViewModel
 │
-├── 📂 Repository
-│   ├── 📂 Error
-│   │   ├── NetworkError
-│   │   └── KeyChainError
-│   │
-│   ├── 📂 Remote
-│   │   ├── 📂 Type
-│   │   │   ├── HeaderType
-│   │   │   └── UrlType
-│   │   │
-│   │   ├── NetworkProtocol
-│   │   ├── NetworkService
-│   │   └── TestNetworkService 
-│   │   
-│   └── 📂 Local
-│       ├── 📂 UserDefaults 
-│       │   └── UserDefaultsHelper
-│       │
-│       └── 📂 KeyChain
-│           └── KeychainHelper
+├── 📂 Domain
 │
-├── 📂 Common
-│
-├── 📂 Util
-│
-├── 📂 Extension
-│
-└── 📂 CustomView
+└── 📂 Repository
+    ├── 📂 Error
+    │   ├── NetworkError
+    │   └── KeyChainError
+    │
+    ├── 📂 Remote
+    │   ├── 📂 Type
+    │   │   ├── HeaderType
+    │   │   └── UrlType
+    │   │
+    │   ├── NetworkProtocol
+    │   ├── NetworkService
+    │   └── TestNetworkService 
+    │   
+    └── 📂 Local
+        ├── 📂 UserDefaults 
+        │   └── UserDefaultsHelper
+        │
+        └── 📂 KeyChain
+            └── KeychainHelper
+ 
 ``` 

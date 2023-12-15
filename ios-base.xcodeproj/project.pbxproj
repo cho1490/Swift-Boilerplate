@@ -179,8 +179,9 @@
 				DE99620B2B0DB8D800126FB1 /* Common */,
 				DE9962022B0DA0CA00126FB1 /* Util */,
 				DE3887192B107BC400FAEC3C /* Extension */,
-				DE9962102B0DD8E900126FB1 /* Presentation */,
 				DE9961FE2B0D9DA400126FB1 /* CustomView */,
+				DEAF5CEE2B2C478000CDE45A /* Domain */,
+				DE9962102B0DD8E900126FB1 /* Presentation */,
 				DE9961FF2B0D9DB300126FB1 /* Repository */,
 				9B0C726A1C738D3400BAF3B1 /* Assets.xcassets */,
 				9B0C726D1C738D3400BAF3B1 /* Info.plist */,
@@ -413,6 +414,13 @@
 				DE99621E2B0DEAD600126FB1 /* UrlType.swift */,
 			);
 			path = Type;
+			sourceTree = "<group>";
+		};
+		DEAF5CEE2B2C478000CDE45A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		DED1833A2B29504200E07D6B /* BottomSheet */ = {
