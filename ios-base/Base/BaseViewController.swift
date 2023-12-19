@@ -26,8 +26,8 @@ class BaseViewController: UIViewController {
     init(viewModel: BaseViewModel? = nil, navigator: Navigator) {
         self.viewModel = viewModel
         self.navigator = navigator
-        
         super.init(nibName: nil, bundle: nil)
+
         binding()
     }
     
@@ -97,4 +97,4 @@ extension BaseViewController: BaseUIProtocol, BaseViewControllerProtocol {
     @objc func initConstraints() { }
     @objc func initProperties() { }
     @objc func binding() { }
-}
+} 

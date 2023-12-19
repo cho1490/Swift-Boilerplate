@@ -8,6 +8,7 @@
  
 import UIKit
 
+
 class AViewController: BaseViewController {
 
     override func viewDidLoad() {
@@ -24,3 +25,17 @@ class AViewController: BaseViewController {
     }
 
 }
+
+#if DEBUG
+import SwiftUI
+
+struct AViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        UIViewControllerPreview {
+            AViewController(navigator: Navigator())
+        }
+        .ignoresSafeArea()
+        .applyPreviewConfigs(with: "\(self)")        
+    }
+}
+#endif

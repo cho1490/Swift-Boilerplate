@@ -24,6 +24,8 @@
 		DE3887162B10711B00FAEC3C /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3887152B10711B00FAEC3C /* CViewModel.swift */; };
 		DE3887182B1075C200FAEC3C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3887172B1075C200FAEC3C /* Theme.swift */; };
 		DE38871B2B107BD000FAEC3C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38871A2B107BD000FAEC3C /* UIColor.swift */; };
+		DE70E45F2B31717400AB9C18 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70E45E2B31717400AB9C18 /* SplashViewController.swift */; };
+		DE70E4612B31764800AB9C18 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70E4602B31764800AB9C18 /* Preview.swift */; };
 		DE8D72D22B0F434E001EEF69 /* ios_baseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D72D12B0F434E001EEF69 /* ios_baseUITests.swift */; };
 		DE8D72D42B0F434E001EEF69 /* ios_baseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D72D32B0F434E001EEF69 /* ios_baseUITestsLaunchTests.swift */; };
 		DE8D72E12B0F435D001EEF69 /* ios_baseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D72E02B0F435D001EEF69 /* ios_baseTests.swift */; };
@@ -37,7 +39,6 @@
 		DE9962062B0DA4BE00126FB1 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962052B0DA4BE00126FB1 /* Navigator.swift */; };
 		DE9962082B0DB4F500126FB1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962072B0DB4F500126FB1 /* BaseViewModel.swift */; };
 		DE99620F2B0DCA0C00126FB1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99620E2B0DCA0C00126FB1 /* Application.swift */; };
-		DE9962132B0DD90600126FB1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962122B0DD90600126FB1 /* SplashViewController.swift */; };
 		DE9962152B0DDA7300126FB1 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962142B0DDA7300126FB1 /* Toast.swift */; };
 		DE9962172B0DDB9100126FB1 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962162B0DDB9100126FB1 /* SplashViewModel.swift */; };
 		DE99621A2B0DE7D700126FB1 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */; };
@@ -95,6 +96,8 @@
 		DE3887152B10711B00FAEC3C /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
 		DE3887172B1075C200FAEC3C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DE38871A2B107BD000FAEC3C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DE70E45E2B31717400AB9C18 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		DE70E4602B31764800AB9C18 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		DE8D72CF2B0F434E001EEF69 /* ios-baseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-baseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8D72D12B0F434E001EEF69 /* ios_baseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_baseUITests.swift; sourceTree = "<group>"; };
 		DE8D72D32B0F434E001EEF69 /* ios_baseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_baseUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -110,7 +113,6 @@
 		DE9962052B0DA4BE00126FB1 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		DE9962072B0DB4F500126FB1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		DE99620E2B0DCA0C00126FB1 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		DE9962122B0DD90600126FB1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DE9962142B0DDA7300126FB1 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		DE9962162B0DDB9100126FB1 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		DE9962192B0DE7D700126FB1 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
@@ -299,6 +301,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		DE4239042B300F7A008E3E31 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		DE8D72D02B0F434E001EEF69 /* ios-baseUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +382,7 @@
 		DE9962022B0DA0CA00126FB1 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				DE70E4602B31764800AB9C18 /* Preview.swift */,
 				DE9962032B0DA0DD00126FB1 /* ScreenUtil.swift */,
 				DE903EBD2B15C856005ED132 /* DebugUtil.swift */,
 			);
@@ -401,7 +411,7 @@
 		DE9962112B0DD8FD00126FB1 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				DE9962122B0DD90600126FB1 /* SplashViewController.swift */,
+				DE70E45E2B31717400AB9C18 /* SplashViewController.swift */,
 				DE9962162B0DDB9100126FB1 /* SplashViewModel.swift */,
 			);
 			path = Splash;
@@ -419,6 +429,7 @@
 		DEAF5CEE2B2C478000CDE45A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				DE4239042B300F7A008E3E31 /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -623,7 +634,6 @@
 				DE9962152B0DDA7300126FB1 /* Toast.swift in Sources */,
 				DE99621D2B0DEAB200126FB1 /* HeaderType.swift in Sources */,
 				DE99620F2B0DCA0C00126FB1 /* Application.swift in Sources */,
-				DE9962132B0DD90600126FB1 /* SplashViewController.swift in Sources */,
 				DEF00C1C2B18537B002CE6D8 /* LargeNavigationBar.swift in Sources */,
 				DE9962212B0DEB1D00126FB1 /* ConstValue.swift in Sources */,
 				DEF00C212B1856E6002CE6D8 /* NavigationBar.swift in Sources */,
@@ -633,6 +643,7 @@
 				DE9961F52B0D8CE900126FB1 /* SceneDelegate.swift in Sources */,
 				DE3887102B10710500FAEC3C /* CViewController.swift in Sources */,
 				DE9962172B0DDB9100126FB1 /* SplashViewModel.swift in Sources */,
+				DE70E4612B31764800AB9C18 /* Preview.swift in Sources */,
 				DE9962082B0DB4F500126FB1 /* BaseViewModel.swift in Sources */,
 				DE1906BB2B107FD5000806B5 /* UIViewController.swift in Sources */,
 				DE9962282B0DF88100126FB1 /* TestNetworkService.swift in Sources */,
@@ -658,6 +669,7 @@
 				DE3887162B10711B00FAEC3C /* CViewModel.swift in Sources */,
 				DE903EBE2B15C856005ED132 /* DebugUtil.swift in Sources */,
 				DE9962252B0DEC6D00126FB1 /* NetworkError.swift in Sources */,
+				DE70E45F2B31717400AB9C18 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,7 +778,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GOOGLE_SERVICES_FILE = "GoogleService-Info";
 				INFOPLIST_FILE = "${PROJECT_BASE_NAME}/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -780,6 +792,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SCHEME_NAME = "$(CONFIGURATION)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -916,7 +929,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GOOGLE_SERVICES_FILE = "GoogleService-Info";
 				INFOPLIST_FILE = "${PROJECT_BASE_NAME}/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -931,6 +944,7 @@
 				SCHEME_NAME = "$(CONFIGURATION)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
